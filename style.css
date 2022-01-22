@@ -18,18 +18,18 @@ html{
   padding:0;
   overflow-x:hidden;
   height: 100%;
+  font-size: 16px;
 }
 
 body {
   background-color: #000;
   margin:0;
   padding:0;
-  height: 100%;
 }
 
 .background-pic-beg {
   background-image: url(images/background5.jpg);
-  height: 100%;
+
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,7 +92,6 @@ p.name, h5 {
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000; 
-  font-size: 100px;
   font-weight: 650;
 }
 
@@ -103,7 +102,6 @@ p.backtext {
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000; 
-  font-size: 70px;
 }
 
 .header {
@@ -181,14 +179,44 @@ img.card-img {
 
 
 /*---Media Queries --*/
-@media (max-width: 992px) {
+@media (max-width: 500px) {
+  p.name {
+    font-size: 325%;
+  }
 
+  p.backtext {
+    font-size: 275%;
+  }
 }
-@media (max-width: 768px) {
-  
+
+@media (min-width: 501px) {
+  p.name {
+    font-size: 525%;
+  }
+
+  p.backtext {
+    font-size: 350%;
+  }
 }
-@media (max-width: 576px) {
-  
+
+@media (min-width: 768px) {
+  p.name {
+    font-size: 700%;
+  }
+
+  p.backtext {
+    font-size: 450%;
+  }
+}
+
+@media (min-width: 1200px) {
+  p.name {
+    font-size: 800%;
+  }
+
+  p.backtext {
+    font-size: 550%;
+  }
 }
 
 
@@ -253,18 +281,4 @@ Large (lg) devices (desktops, 992px and up)
 
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
-
-
-
-	<div class="cards container-fluid padding">
-	<h2 class="card-header">Involvement</h2>
-		<div class="card" style="width: 18rem;">
-			<img class="card-img-top" src="images/SHPE_Logo.jpg" alt="Shpe">
-			<div class="card-body">
-			<h5 class="card-title">Society of Hispanic Professional Engineers</h5>
-			<p class="card-text">Technical Affairs Committee Member</p>
-			<a href="#" class="btn btn-primary">More Info</a>
-			</div>
-		</div>
-	</div>
 */
