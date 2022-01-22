@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gloria Martinez</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -10,77 +11,258 @@
 	<link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
-	<title>Home</title>
-	<style>
-		body, html {
-  			height: 100%;
-		}
-	</style>
 </head>
 
-<body>
-	<!--Background-->
-	<div class="background-pic">
-	<!--Navigation-->
-	<nav class="navbar navbar-expand-md navbar-dark" style="padding: 20px;">
-		<div class="container-fluid">
-			<!--Logo-->
-			<a class="navbar-brand" href="index.html">
-				<img src="images/logo.png" width="80" height="35">
-			</a>
-			<!--Navigation Button-->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<!--Links-->
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-			    <ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-				  <a class="nav-link text-light current" href="index.html">Home<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-				  <a class="nav-link text-light" href="aboutMe.html">About Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="involvement.html">Involvement</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" href="skills&projects.html">Skills & Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-light" target="_blank" href="Gloria Martinez Resume 2021.04.05.pdf">Resume</a>
-				</li>
-			    </ul>
+<body style="font-family: Georgia, 'Times New Roman', Times, serif;">
+	<!--Nametag-->
+	<div class="background-pic-beg">
+		<!--Navigation-->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+			<div class="container-fluid">
+				<!--Logo-->
+				<a class="navbar-brand" href="#name_tag">
+					<img src="images/logo.png" width="80" height="35">
+				</a>
+				<!--Navigation Button-->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!--Links-->
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item link">
+							<a class="nav-link text-light" href="#name_tag">Home</a>
+						</li>
+						<li class="nav-item link">
+							<a class="nav-link text-light" href="#about_me">About Me</a>
+						</li>
+						<li class="nav-item link">
+							<a class="nav-link text-light" href="#involvement">Involvement</a>
+						</li>
+						<li class="nav-item link">
+							<a class="nav-link text-light" href="#projects">Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-light btn" target="_blank" href="Gloria Martinez Resume 2022.01.13.pdf">
+								<button type="button" class="btn btn-outline-light btn-md">Resume</button>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--Center text-->
+		<div class="text-center justify-content-center align-self-center section container-fluid" style="margin-top: -20px;" id="name_tag">
+			<p class="h1 name"> Gloria Martinez</p>
+			<p class="h1 backtext">Texas A&M '24</p>
+			<p class="h1 backtext">Electrical Engineering</p>
+		</div>
+	</div>
+	
+	<!--About Me-->
+	<section class="container-fluid back section" id="about_me">
+		<div class="row justify-content-center">
+			<!--Picture-->
+			<div class="col-md-3 col-9">
+				<img src="images/portrait.jpg" class="img-fluid portrait-picture" alt="Headshot Photo">
+			</div>
+			<!--Description-->
+			<div class="col-md-6 col-10 description">
+				<h2 class="description-text text-center header">About Me</h2>
+				<p class="description-text text-center ">Hello! My name is Gloria Martinez, and I am a sophmore at Texas A&M 
+					pursuing a degree in Electrical Engineering with a minor in Computer Science.
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aspernatur eaque ullam recusandae 
+					exercitationem totam debitis soluta possimus accusantium non, corporis, 
+					iure odio reiciendis deleniti laborum quisquam delectus voluptas mollitia!
+				</p>
 			</div>
 		</div>
-	</nav>
+	</section>
+	
+	<!--Skills-->
+	<section class="container-fluid back section">
+		<div class="text-center">
+			<h2 class="header">Skills</h2>
+		</div>
+		<div class="row text-center description description-special" style="margin: 0 10% 0 10%;">
+			<!--Python Skill-->
+			<div class="col-xs-12 col-md-6 col-lg-4 description-text mx-auto">
+				<img src="images/python_icon.png" class="small-icon" style="width: 100px;">
+				<h3 style="padding-top: 10px;">Python</h3>
+				<p>Proficient programming knowledge.</p>
+			</div>
+			<!--C++ Skill-->
+			<div class="col-xs-12 col-md-6 col-lg-4 description-text mx-auto">
+				<img src="images/cpp_icon.png" class="small-icon" style="width: 90px;">
+				<h3 style="padding-top: 10px;">C++</h3>
+				<p>Proficient programming knowledge.</p>
+			</div>
+			<!--HTML & CSS Skill-->
+			<div class="col-xs-12 col-md-6 col-lg-4 description-text mx-auto">
+				<img src="images/html_css_icon.png" class="small-icon" style="width: 180px;">
+				<h3 style="padding-top: 10px;">HTML & CSS</h3>
+				<p>Basic knowledge.</p>
+			</div>
+			<!--Vivado Skill-->
+			<div class="col-xs-12 col-md-6 col-lg-4 description-text mx-auto">
+				<img src="images/vivado_icon.png" class="small-icon" style="width: 100px;">
+				<h3 style="padding-top: 10px;">Vivado</h3>
+				<p>Proficient programming knowledge.</p>
+			</div>
+			<!--Microsoft Office Skill-->
+			<div class="col-xs-12 col-md-6 col-lg-4 description-text mx-auto">
+				<img src="images/Microsoft_icon.png" class="small-icon" style="width: 90px;">
+				<h3 style="padding-top: 10px;">Microsoft Office</h3>
+				<p>E</p>
+			</div>
+			<!--Bilingual Skill-->
+			<div class="col-xs-12 col-md-6 col-lg-4 description-text mx-auto">
+				<img src="images/speech_bubble.png" class="small-icon" style="width: 160px;">
+				<h3 style="padding-top: 10px;">Bilingual</h3>
+				<p>Proficient English and Spanish speaking, reading, and writing abilities.</p>
+			</div>
+		</div>
+	</section>
 
-	<!--Center text-->
-	<div class="text-center align-self-center">
-		<p class="text-center h1 name"> Gloria Martinez</p>
-		<p class="text-center h1 backtext">Texas A&M '24</p>
-		<p class="text-center h2 backtext">Electrical Engineering</p>
+	<!--Aria label & alt is for people with disabilities so remember to add!!!!-->
+	
+	<!--Involvement-->
+	<section class="container-fluid back section" id="involvement">
+		<div class="text-center">
+			<h2 class="header">Involvement</h2>
+		</div>
+		<div class="row card-deck" style="padding: 0 80;">
+			<!--SHPE Card-->
+			<div class="col-10 col-sm-6 col-lg-4 mx-auto justify-content-center">
+				<div class="card text-center" style="border-radius: 15px; background-color: #303461;">
+					<div class="card-body">
+						<div class="involve-card-pic">
+							<img class="card-img" src="images/SHPE_Logo.jpg" alt="SHPE Logo">
+						</div>
+						<h4 class="card-title">Society of Hispanic Professional Engineers</h4>
+						<p class="date-card">October 2020 - Present</p>
+						<button type="button" class="btn btn-primary mt-auto" data-toggle="modal" data-target="#SHPEModal">
+							More Info
+						</button>
+					</div>
+				</div>
+				<!--SHPE modal-->
+				<div class="modal fade" id="SHPEModal" tabindex="-1" aria-labelledby="SHPE-modal-title" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="modal-title">Society of Hispanic Professional Engineers</h5>
+								</div>
+								<div class="modal-body">
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Esse labore delectus autem assumenda minus, vitae, id cumque 
+									ex est dignissimos excepturi enim vero obcaecati fugit dolores 
+									repudiandae amet necessitatibus placeat?</p>
+								</div>
+							<div class="modal-footer">
+								<button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--IEEE Card-->
+			<div class="col-10 col-sm-6 col-lg-4 mx-auto">
+				<div class="card text-center" style="border-radius: 15px; background-color: #303461;">
+					<div class="card-body">
+						<div class="involve-card-pic">
+							<img class="card-img" src="images/IEEE_Logo.jpeg" alt="SHPE Logo">
+						</div>
+						<h4 class="card-title">Institute of Electrical and Electronics Engineers</h4>
+						<p class="date-card">September 2021 - Present</p>
+						<button type="button" class="btn btn-primary mt-auto" data-toggle="modal" data-target="#IEEEModal">
+							More Info
+						</button>
+					</div>
+				</div>
+				<!--IEEE modal-->
+				<div class="modal fade" id="IEEEModal" tabindex="-1" aria-labelledby="IEEE-modal-title" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="modal-title">Welcome!</h5>
+							</div>
+							<div class="modal-body">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+									Esse labore delectus autem assumenda minus, vitae, id cumque 
+									ex est dignissimos excepturi enim vero obcaecati fugit dolores 
+									repudiandae amet necessitatibus placeat?</p>
+							</div>
+							<div class="modal-footer">
+								<button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="Close">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!--Projects--> 
+	<!--Have the picture slide down and the description slide up, or come from opposite sides-->
+	<section class="container-fluid back section" id="projects">
+		<div class="text-center">
+			<h2 class="header">Projects</h2>
+		</div>
+
+		<!--Project List Template
+		<div class="align-content-center">
+			<div class="row justify-content-center">
+				<div class="col-6 col-lg-5">
+					<img src="images/website.png" class="img-fluid projects-pic" alt="HTML Website Code">
+				</div>
+				<div class="col-8 col-lg-6 description align-content-center justify-content-center">
+					<h2 class="description-text">Title</h2>
+					<p class="description-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aspernatur eaque ullam recusandae 
+						exercitationem totam debitis soluta possimus accusantium non, corporis, 
+						iure odio reiciendis deleniti laborum quisquam delectus voluptas mollitia!
+					</p>
+				</div>
+			</div>
+		</div>-->
+
+	</section>
+
+	<!--End of Page & Last Project-->
+	<div class="container-fluid background-pic-end" style="margin-top: -30px;">
+		<div class="align-content-center">
+			<div class="row justify-content-center">
+				<div class="col-6 col-lg-5">
+					<img src="images/website.png" class="img-fluid projects-pic" alt="HTML Website Code">
+				</div>
+				<div class="col-8 col-lg-6 description align-content-center justify-content-center">
+					<h2 class="description-text">Personal Website</h2>
+					<p class="description-text">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi aspernatur eaque ullam recusandae 
+						exercitationem totam debitis soluta possimus accusantium non, corporis, 
+						iure odio reiciendis deleniti laborum quisquam delectus voluptas mollitia!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row text-center py-5">
+			<!--Contact info-->
+			<div class="col-md-6">
+				<h3>Contact:</h3>
+				<p>Email: gloriamar0@tamu.edu</p>
+				<p>Phone: (832) 599-3163</p>
+			</div>
+			<!--Socials-->
+			<div class="social col-md-6">
+				<h3>Connect with me!</h3>
+				<a href="https://www.instagram.com/gloria._.mtnz/"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/gloria-martinez-966b9a1b8/"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
 	</div>
-</div>
+	
 </body>
-
-<!--Footer-->
-<footer>
-<div class="container-fluid padding">
-<div class="row text-center">
-	<!--Contact info-->
-	<div class="col-md-6">
-		<h3>Contact:</h3>
-		<p>Email: gloriamar0@tamu.edu</p>
-		<p>Phone: (832) 599-3163</p>
-	</div>
-	<!--Socials-->
-	<div class="social col-md-6">
-		<h3>Connect with me!</h3>
-		<a href="https://www.instagram.com/gloria._.mtnz/"><i class="fab fa-instagram"></i></a>
-		<a href="https://www.linkedin.com/in/gloria-martinez-966b9a1b8/"><i class="fab fa-linkedin"></i></a>
-	</div>
-</div>
-</div>
-</footer>
 </html>
