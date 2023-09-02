@@ -92,7 +92,7 @@ p.name, h5 {
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000; 
-  font-weight: 650;
+  font-weight: 550;
 }
 
 p.backtext {
@@ -211,11 +211,11 @@ img.card-img {
 
 @media (min-width: 1200px) {
   p.name {
-    font-size: 800%;
+    font-size: 650%;
   }
 
   p.backtext {
-    font-size: 550%;
+    font-size: 400%;
   }
 }
 
